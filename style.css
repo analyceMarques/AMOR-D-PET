@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: aqua;
+    color: #ff1100;
+}
+  
+.topo {
+    display: flex;
+    justify-content: space-between; /*os elementos figacam com o mesmo espacamento*/ 
+    align-items: center;
+    background-color: #e57239;
+    padding: 10px 20px;
+}
+  
+.topo .logo {
+    font-weight: bold;
+    font-size: 25px;
+}
+  
+.topo input {
+    flex: 1;
+    margin: 0 20px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+  
+.topo .icones span {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.topo .p-log{
+    color: blue;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #010912; /* Cor de fundo */
+    color: #e3d8d8; /* Cor da letra */
+    font-size: 35px;
+}
+  
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    background: #d34437;
+    padding: 10px;/*tamanho*/
+}
+  
+.catg {
+    background: #fcded8;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+  
+.ofertas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+  
+.off {
+    background-color: #f5b3a0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+h2{
+    text-align: center;
+}
+.destaque {
+    background-color: rgb(7, 7, 7);
+    padding: 20px;
+    text-align: center;
+}
+  
+.destaque-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+  
+.item {
+    background-color: #decfc1;
+    padding: 15px;
+    border-radius: 10px;
+    width: 20%;
+}
+  
+.produtos {
+    padding: 20px;
+}
+  
+.produtos-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  
+.prod {
+    background-color: #d7a585;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 10px;
+    font-size: 24px;
+    width: 18%;
+    text-align: center;
+}
+  
