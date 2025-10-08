@@ -1,88 +1,94 @@
-body {
+*{
+    padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: aqua;
-    color: #ff1100;
+    box-sizing: border-box;
 }
-  
-.topo {
+ body{
+    background-color: rgb(242, 225, 193);
+    height: 100vh;
+}
+
+header{
+    background-color: #ca8b82;
+    width: 100%;
+    height: 100px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* sombra discreta abaixo do header */
+}
+
+#container{
     display: flex;
-    justify-content: space-between; /*os elementos figacam com o mesmo espacamento*/ 
+    justify-content: space-between;
     align-items: center;
-    background-color: #e57239;
-    padding: 10px 20px;
-}
-  
-.topo .logo {
-    font-weight: bold;
-    font-size: 25px;
-}
-  
-.topo input {
-    flex: 1;
-    margin: 0 20px;
-    padding: 8px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-}
-  
-.topo .icones span {
-    margin-left: 10px;
-    font-size: 18px;
+    width: 100%;
 }
 
-.topo .p-log{
-    color: blue;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 50px;
-    background-color: #010912; /* Cor de fundo */
-    color: #e3d8d8; /* Cor da letra */
-    font-size: 35px;
-}
-  
-.categorias {
+.link-c{
     display: flex;
-    justify-content: space-around;
-    background: #d34437;
-    padding: 10px;/*tamanho*/
-}
-  
-.catg {
-    background: #fcded8;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-  
-.ofertas {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-  
-.off {
-    background-color: #f5b3a0;
-    border-radius: 12px;
-    padding: 20px;
-    text-align: center;
-    width: 30%;
-    margin: 10px;
-    font-weight: bold;
-    color: #fff;
+    align-items: center;
+    gap: 30px;
 }
 
-h2{
-    text-align: center;
+.lic{
+    color: rgb(49, 39, 39);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 30px;  
 }
-.destaque {
-    background-color: rgb(7, 7, 7);
-    padding: 20px;
+  
+.lic:hover{
+    background-color: #f5caca;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+main{
+    background-color: rgb(242, 225, 193);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.princ{
+    background-color: rgb(243, 231, 210);
+    width: 600px;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 50px;
+}
+
+.princ h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+   
+}
+
+.princ h5{
+    position: absolute;
+    bottom: 100px;
+    left: 15px;
+    right: 15px;
+    top: 120px;
+}
+.princ a{
+    text-align: center;
+    position: absolute;
+    left: 210px;
+    bottom: 60px;
+}
+
+#catg {
+    background-color: #ca8b82;
+    padding: 10px;
     text-align: center;
 }
   
@@ -90,20 +96,47 @@ h2{
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+    align-items: center;
+    gap: 8px;
 }
   
-.item {
+#item {
     background-color: #decfc1;
     padding: 15px;
     border-radius: 10px;
-    width: 20%;
+    height: 80px;
+    display: flex;/* Coloca imagem e texto lado a lado */
+    align-items: center;
+    gap: 5px; /* Espaço entre imagem e texto */
+    font-weight: bold;
+    font-size: 16px;
 }
-  
-.produtos {
+
+#item img{
+    width: 80px;
+    position: relative;
+    right: 5px;
+}
+
+#prod {
     padding: 20px;
 }
+
+#prod h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+#phap{
+    font-size: 35px;
+    color:  rgb(69, 52, 52);
+    text-decoration: none;
+}
   
-.produtos-list {
+.prod-list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -114,7 +147,148 @@ h2{
     padding: 30px;
     border-radius: 15px;
     margin: 10px;
-    font-size: 24px;
-    width: 18%;
+    width: 350px;
     text-align: center;
+    justify-content: space-around;
+}
+
+.pro1{
+    width: 280px;
+    border-radius: 20px;
+}
+
+.pro2{
+    width: 280px;
+    border-radius: 20px;
+}
+
+.pro3{
+    width: 280px;
+    border-radius: 20px;
+}
+
+.pro4{
+    width: 280px;
+    border-radius: 20px;
+}
+
+.pro5{
+    width: 280px;
+    border-radius: 20px;
+} 
+
+footer{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding: 9px;
+    background-color: rgb(69, 52, 52);
+    color: white;
+}
+
+/*pag. login*/
+
+#container-l{
+    height: 83%;
+}
+
+.login{
+    width: 500px;
+    height: 450px;
+    background-color: #ca8b82;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 1.5, 1.5); /* sombra discreta abaixo do header */
+}
+
+.login h1{
+    text-align: center;
+    padding: 35px;
+}
+
+.terminei{
+    naquiii
+}
+
+.login a{
+    margin: 13px;
+    color:  rgb(69, 52, 52);
+    text-decoration: none;
+}
+
+label{
+    padding-left: 20px;
+}
+
+input{
+    margin: 10px;
+    height: 25px;
+    border-radius: 8px;
+}
+
+.but1-l{
+    width: 75px;
+    height: 33px;
+    border-radius: 20px;
+    margin: 10px;
+    position: absolute;
+    left: 630px;
+}
+
+.but2-l{
+    width: 75px;
+    height: 33px;
+    border-radius: 20px;
+    margin: 10px;
+    position: absolute;
+    left: 730px;
+}
+
+/*pag esq-senh*/
+
+.but-e{
+    font-size: 20px;
+    position: absolute;
+    margin-left: 5px;
+}
+
+/*pag redef-senh*/
+
+.but-r{
+    font-size: 20px;
+    position: absolute;
+    margin-left: 5px;
+}
+
+/*pag de vendas*/
+
+
+#animais{
+    padding: 10px;
+    text-align: center;
+}
+  
+.animais-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    align-items: center;
+    gap: 8px;
+}
+  
+#item {
+    background-color: #decfc1;
+    padding: 15px;
+    border-radius: 10px;
+    height: 80px;
+    display: flex;/* Coloca imagem e texto lado a lado */
+    align-items: center;
+    gap: 5px; /* Espaço entre imagem e texto */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#item img{
+    width: 80px;
+    position: relative;
+    right: 5px;
 }
